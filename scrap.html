@@ -1,0 +1,50 @@
+function light(sw) {
+    var pic;
+    if (sw == 1) {
+        pic = "/home/sameer/Downloads/Image0014.jpg"
+    } else {
+
+        pic = "/home/sameer/Desktop/html/giphy.gif"
+    }
+
+    document.getElementById('myImage').src = pic;
+
+}
+function sum(){
+  var inputone=document.getElementById("inputone").value;
+  var inputtwo=document.getElementById("inputtwo").value;
+  var total=parseInt(inputone) + parseInt(inputtwo);
+  alert(total);
+}
+
+function mul(){
+  var inputone=document.getElementById("inputone").value;
+  var inputtwo=document.getElementById("inputtwo").value;
+  var total=parseInt(inputone) * parseInt(inputtwo);
+  alert(total);
+}
+function substract(){
+  var inputone=document.getElementById("inputone").value;
+  var inputtwo=document.getElementById("inputtwo").value;
+  var total=parseInt(inputone) - parseInt(inputtwo);
+  alert(total);}
+
+function division(){
+    var inputone=document.getElementById("inputone").value;
+    var inputtwo=document.getElementById("inputtwo").value;
+    var total=parseInt(inputone) / parseInt(inputtwo);
+    alert(total);
+  }
+<img id="myImage" src="/home/sameer/Downloads/Image0014.jpg" width="100" height="180">
+<input type="text"value=""id="inputone">
+<input type="text"value=""id="inputtwo">
+<p>
+<button type="button" onclick="sum()">+</button>
+<button type="button" onclick="mul()">*</button>
+<button type="button" onclick="substract()">-</button>
+<button type="button" onclick="division()">/</button>
+
+
+
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>

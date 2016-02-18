@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+
+function calculator(symbol){
+  var cal ;
+var inputone =  document.getElementById('inputone').value;
+var inputtwo =  document.getElementById('inputtwo').value;
+console.log(inputone)
+  if (symbol=='division'){
+var total=parseInt(inputone) / parseInt(inputtwo);
+alert(total);
+}
+
+  else if (symbol=='multiplication') {
+    var total=parseInt(inputone) * parseInt(inputtwo);
+    alert(total);
+  }
+
+  else if (symbol=='subtarction') {
+    var total=parseInt(inputone) - parseInt(inputtwo);
+    alert(total);
+  }
+
+  else if (symbol=='addition') {
+    var total=parseInt(inputone) + parseInt(inputtwo);
+    alert(total);
+  }
+
+}
+
+
+
+</script>
+<form action="action_page.php">
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+<input type="text"value=""id="inputone">
+<input type="text"value=""id="inputtwo">
+
+-----------------------------
+
+<br><br><br>
+<button type="button" onclick="calculator('division')">/</button>
+<button type="button" onclick="calculator('multiplication')">*</button>
+<button type="button" onclick="calculator('subtraction')">-</button>
+<button type="button" onclick="calculator('addition')">+</button>
+
+
+</p>
+
+</body>
+</html>
