@@ -1,86 +1,113 @@
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
+<html lang="en">
+    <head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Tab Styles Inspiration</title>
-		<meta name="description" content="MY NEW WEBSITE: Inspiration From tympanus" />
-		<meta name="keywords" content="tabs, inspiration, web design, css, modern, effects, svg" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="normalize.css" />
-		<link rel="stylesheet" type="text/css" href="demo.css" />
-		<link rel="stylesheet" type="text/css" href="tabs.css" />
-		<link rel="stylesheet" type="text/css" href="tabstyles.css" />
-  		<script src="modernizr.custom.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Animated Content Tabs with CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Animated Content Tabs with CSS3" />
+        <meta name="keywords" content="tabs, css3, transition, checked, pseudo-class, label, css-only, sibling combinator" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" type="text/css" href="demos.css" />
+        <link rel="stylesheet" type="text/css" href="style4.css" />
+		<script type="text/javascript" src="modernizr.custom.04022.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+			<style>
+				.content{
+					height: auto;
+					margin: 0;
+				}
+				.content div {
+					position: relative;
+				}
+			</style>
+		<![endif]-->
+    </head>
+    <body>
+        <div class="container">
+			<!-- Codrops top bar -->
+            <div class="codrops-top">
+                <a href="https://en.wikipedia.org/wiki/Islam">
+                    <strong>&laquo; other site </strong>Direction On-ISLAM
+                </a>
+                <span class="right">
+					<a href="https://web.facebook.com/sameer.ahamed.921?ref=br_rs">Placeholder text by SAMEER AHAMED</a>
+                    <a href="https://web.facebook.com/sameer.ahamed.921?ref=br_rs">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+			<header>
+				<h1>ISLAM BASICS IN MALAYALAM <span>USING CSS </span></h1>
 
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-7243260-2']);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
 
-	</head>
-	<body>
-		<h3><a href="css3.html">ROUGH</a></h3>
-
-		<svg class="hidden">
-			<defs>
-				<path id="tabshape" d="M80,60C34,53.5,64.417,0,0,0v60H80z"/>
-			</defs>
-		</svg>
-		<div class="container">
-			<!-- Top Navigation -->
-			<div class="codrops-top clearfix">
-				<a class="codrops-icon codrops-icon-prev" href="https://web.facebook.com/sameer.ahamed.921?ref=br_rs"><span>About sameer</span></a>
-				<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/"><span>TO KNOW MORE ABOUT TYMPANUS</span></a></span>
-			</div>
-			<header class="codrops-header">
-				<h1>MY NEW WEB DESIGN<span>Inspired From Tympanus</span></h1>
-				<p class="support">Your browser does not support <strong>flexbox</strong>! <br />Please view this demo with a <strong>modern browser</strong>.</p>
 			</header>
-			<section>
-				<div class="tabs tabs-style-bar">
-					<nav>
-						<ul>
-							<li><a href="#section-bar-1" class="icon icon-home"><span>Home</span></a></li>
-							<li><a href="#section-bar-2" class="icon icon-box"><span>Archive</span></a></li>
-							<li><a href="#section-bar-3" class="icon icon-display"><span>Analytics</span></a></li>
-							<li><a href="#section-bar-4" class="icon icon-upload"><span>Upload</span></a></li>
-							<li><a href="#section-bar-5" class="icon icon-tools"><span>Settings</span></a></li>
-						</ul>
-					</nav>
-					<div class="content-wrap">
-						<section id="section-bar-1"><p>1</p></section>
-						<section id="section-bar-2"><p>2</p></section>
-						<section id="section-bar-3"><p>3</p></section>
-						<section id="section-bar-4"><p>4</p></section>
-						<section id="section-bar-5"><p>5</p></section>
-					</div><!-- /content -->
-				</div><!-- /tabs -->
+			<section class="tabs">
+	            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+		        <label for="tab-1" class="tab-label-1">ഇസ്‌ലാം</label>
+
+	            <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+		        <label for="tab-2" class="tab-label-2">വിശ്വാസങ്ങൾ</label>
+
+	            <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+		        <label for="tab-3" class="tab-label-3">അടിസ്ഥാന</label>
+
+	            <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+		        <label for="tab-4" class="tab-label-4">ഗ്രന്ഥങ്ങൾ</label>
+
+			    <div class="clear-shadow"></div>
+
+		        <div class="content">
+			        <div class="content-1">
+						<h2>ഇസ്‌ലാം</h2>
+                        <p>ഇസ്‌ലാം (അറബിയിൽ: الإسلام; al-'islām, ഇംഗ്ലീഷിൽ: Islam.) എന്നത് ഏകദൈവവിശ്വാസത്തിലധിഷ്ഠിതമായ ഒരു മതമാണ്‌. ഖുർആൻ ആണ് ഈ മതത്തിന്റെ അടിസ്ഥാന ഗ്രന്ഥം. എഴാം ശതകത്തിൽ ജീവിച്ചിരുന്ന മുഹമ്മദ്‌(സ്വ) ദൈവദൂതനായിരുന്നുവെന്നും അദ്ദേഹം വഴി ലഭിച്ച ഖുർആൻ ദൈവിക സന്ദേശമാണ് എന്നും മുസ്ലീംകൾ വിശ്വസിക്കുന്നു. ഇസ്‌ലാം എന്നാൽ അറബി ഭാഷയിൽ (اسلام) സമാധാനം എന്നും സമർപ്പണം എന്നുമാണർത്ഥം. ദൈവത്തിനായി (അറബിയിൽ: ﷲ; മലയാളം: അല്ലാഹ്), ദൈവത്തിനു മാത്രമായി, സ്വയം സമർപ്പിച്ചുകൊണ്ടു ജീവിക്കുക എന്നതാണ് ഇസ്‌ലാമിന്റെ സാങ്കേതികാർത്ഥം. ഇസ്‌ലാം മതവിശ്വാസികൾ മുസ്‌ലിംകൾ എന്ന പേരിൽ അറിയപ്പെടുന്നു.
+
+ഇസ്‌ലാം ഒരു ലോക മതമാണ്. അതായത് ലോകത്തെ എല്ലാ രാജ്യങ്ങളിലും എല്ലാ പ്രദേശങ്ങളിലും, എല്ലാ മനുഷ്യ വംശങ്ങളിലും മുസ്ലീംകൾ ഉണ്ട് [1](ക്രിസ്തുമതം മാത്രമാണ് ഇത്തരത്തിലുള്ളതായ മറ്റൊരു മതം). ഇസ്‌ലാമിന്‌ ലോകത്താകെ 140 കോടി അനുയായികൾ ഉണ്ട് എന്നു കണക്കാക്കപ്പെടുന്നു. കൂടാതെ ലോകത്ത് ഏറ്റവും വേഗതയിൽ വളർന്നുകൊണ്ടിരിക്കുന്ന മതം ഇസ്‌ലാം ആണ്[2][3] ഏഷ്യയിലും ഉത്തര പശ്ചിമ പൂർവ്വ ആഫ്രിക്കൻ രാജ്യങ്ങളിലുമാണു മുസ്ലീംകൾ കൂടുതൽ ഉള്ളത്. ഇന്തോനേഷ്യ, ഇന്ത്യ, പാകിസ്താൻ, ബംഗ്ലാദേശ് എന്നിവയാണു എറ്റവും കൂടുതൽ മുസ‌്ലിംകൾ ഉള്ള രാജ്യങ്ങൾ.
+
+				    </div>
+			        <div class="content-2">
+						<h2> വിശ്വാസങ്ങൾ</h2>
+          <p>ഖുർആൻ എന്ന വിശുദ്ധ ഗ്രന്ഥം മുഹമ്മദ്(സ്വ) നബിക്ക് ദൈവത്തിൽ നിന്നും ലഭിച്ച വേദഗ്രന്ഥമാണെന്ന് മുസ്‌ലിംകൾ വിശ്വസിക്കുന്നു. ദാവൂദ് നബി (ദാവീദ്), മൂസ നബി (മോശെ), ഈസ നബി (യേശു ക്രിസ്തു) എന്നിവർ ദൈവത്തിൽ നിന്നുള്ള പ്രവാചകരാണെന്നും അവരുടെ വേദഗ്രന്ഥങ്ങളായ സബൂർ , തൌറാത്ത്, ഇഞ്ചീൽ എന്നിവ ദൈവികഗ്രന്ഥങ്ങളായിരുന്നുവെന്നും, മുൻ പ്രവാചകന്മാരുടെ തുടർച്ചയായാണ് അന്ത്യപ്രവാചകൻ മുഹമ്മദിന്റെ പ്രവാചകത്വം എന്നും ഇസ്‌ലാം ഉണർത്തുന്നു.</p>
+
+						<p>ഇസ്‌ലാം അതിന്റെ അടിസ്ഥാന പ്രമാണങ്ങളായി ഖുർ‌ആനും പ്രവാചകചര്യയും(سنة) കണക്കാക്കുന്നു. പ്രവാചകനായ മുഹമ്മദ് നബിക്ക് പ്രവാചകത്വത്തിന്റെ 23 വർഷക്കാലത്തിനിടക്ക് ദൈവത്തിൽ നിന്ന് അവതീർണ്ണമായതാണ് ഖുർആൻ. പ്രസ്തുത ഖുർ‌ആനിന്റെ വെളിച്ചത്തിൽ പ്രവാചകൻ അനുവർത്തിച്ച രീതികൾ, വാക്ക്, പ്രവൃത്തി, അനുവാദം തുടങ്ങിയവ പ്രവാചക ചര്യയായി കണക്കാക്കി ക്രോഡീകരിച്ചിരിക്കുന്ന ഗ്രന്ഥ ശേഖരമാണ് ഹദീഥുകൾ(حديث). പ്രാമാണികമായ നിരവധി ഹദീഥ് ഗ്രന്ഥങ്ങളുണ്ട്. അവയിലൊക്കെയായി പ്രവാചക ചര്യകൾ രേഖപ്പെടുത്തപ്പെട്ടിരിക്കുന്നു. ബുഖാരി, മുസ്ലിം, തിർമിദി, ഇബ്​നു മാജ, അഹ്​മദ്, നസാഇ,അബൂദാവൂദ് എന്നിവരുടെ ഹദീഥ് ഗ്രന്ഥങ്ങൾ കൂടാതെ മുവത്വ, ദാരിമി, കൻസുൽ ഉമ്മാൽ തുടങ്ങി നിരവധി ഹദീഥ് ഗ്രന്ഥങ്ങൾ പ്രമാണങ്ങളായിട്ടുണ്ട്. </p>
+            <p>ഖുർആൻ പ്രകാരം ഒരു മുസ്‌ലിമിന്റെ വിശ്വാസം പൂർണ്ണമാകുന്നത് അവൻ ആറു കാര്യങ്ങളിൽ അടിയുറച്ച് വിശ്വസിക്കുമ്പോഴാണ്. </വ ഇപ്രകാര‌മാണ്:</p>
+
+<p>  ദൈവം ഏകനാണെന്ന വിശ്വാസം. (തൗഹീദ്)       </p>
+<p> ദൈവത്തിന്റെ മലക്കുകളിൽ (മാലാഖമാർ) വിശ്വസിക്കുക. (മലക്കുകൾ) </p>
+<p> ദൈവത്തിന്റെ സകല ഗ്രന്ഥങ്ങളിലും വിശ്വസിക്കുക. (കുതുബ്)[6] </p>
+<p> ദൈവം നിയോഗിച്ച സകല പ്രവാചകന്മാരിലുമുള്ള വിശ്വാസം. (റുസ്‌ൽ) </p>
+<p> അന്ത്യദിനത്തിലും പരലോകത്തിലും വിശ്വസിക്കുക. (ഖിയാമ) </p>
+<p> ദൈവിക വിധിയിലുള്ള വിശ്വാസം അഥവാ നന്മയും തിന്മയും അല്ലാഹുവിന്റെ മുൻ അറിവോട് കൂടിയാണ് എന്ന്‌ വിശ്വസിക്കുക. (ഖദ്‌ർ)[7] </p>
+
+            </div>
+			        <div class="content-3">
+						<h2>ദൈവം</h2>
+                        <p>ഏകദൈവ വിശ്വാസമാണ് (തൗഹീദ്) ഇസ്‌ലാമിലെ അടിസ്ഥാന തത്ത്വം. ദൈവത്തിന് അറബി ഭാഷയിലുപയോഗിക്കുന്ന പദമാണ് അല്ലാഹു എന്നത്. അറബി ഭാഷയിൽ ഈ പദത്തിന് ഒരു ലിംഗരൂപമോ ബഹുവചനരൂപമോ ഇല്ല. അറബി വാക്കായ അൽ (the), ഇലാഹ്‌ (god) എന്നിവയിൽ നിന്നാണിത് രൂപപ്പെട്ടത് എന്ന് ഭൂരിപക്ഷം ഭാഷാ പണ്ഡിതരും കരുതുന്നു. മറ്റു ചില പണ്ഡിതർ ഈ വാക്ക് അരാമായ ഭാഷയിലെ ‘അലാഹാ’ എന്ന പദത്തിൽനിന്നും ഉരുത്തിരിഞ്ഞതാണെന്ന പക്ഷക്കാരാണ്. അറബ് വംശജരായ ക്രൈസ്തവരും യഹൂദരും അല്ലാഹു എന്നു തന്നെയാണ് ദൈവത്തെ വിളിക്കുന്നത്[8]. ഖുർ‌ആനിലെ ഒരു അദ്ധ്യായത്തിൽ ദൈവത്തെപ്പറ്റി വിശദീകരിക്കുന്നത് ഇപ്രകാരമാണ്: പരമദയാലുവും കരുണാവാരിധിയുമായ അല്ലാഹുവിന്റെ നാമത്തിൽ. 1-പറയുക, അവനാണ് അല്ലാഹു. അവൻ ഏകനാണ്. 2-അല്ലാഹു ആരെയും ആശ്രയിക്കാത്തവനാണ്. ഏവരാലും ആശ്രയിക്കപ്പെടുന്നവനും. 3-അവൻ പിതാവോ പുത്രനോ അല്ല. 4-അവനു തുല്യനായി ആരുമില്ല.</p>
+						<h3>മലക്കുകൾ</h3>
+						<p>മലക്കുകളിലുള്ള വിശ്വാസം ഇസ്‌ലാമിലെ പ്രധാന വിശ്വാസങ്ങളിലൊന്നാണ്. ‘മലക്‘ എന്ന അറബി പദത്തിന് ‘മാലാഖമാർ’ എന്ന്‌ സാമാന്യാർത്ഥം നൽകാമെങ്കിലും ‘ദൂതൻ’ (മനുഷ്യപ്രകൃതി ഉള്ളതല്ല) എന്ന അർത്ഥവും കൽപ്പിക്കപ്പെട്ടിട്ടുണ്ട്‌. ഖുർ‌ആൻ പ്രകാരം മലക്കുകൾക്ക് സ്വന്തമായി ചിന്താശേഷിയില്ല. അവ സമ്പൂർണ്ണമായും ദൈവത്തിന്റെ ആജ്ഞാനുവർത്തികളാണ്.[9], [10] ദൈവത്തിന്റെ ആജ്ഞയനുസരിച്ച് പ്രവാചകന്മാർക്കും മറ്റും സന്ദേശമെത്തിക്കുക, ദൈവത്തെ സ്തുതിക്കുക, ഓരോ മനുഷ്യരുടെയും കർമ്മങ്ങൾ രേഖപ്പെടുത്തുക, മനുഷ്യന്റെ കാലാവധിയെത്തുമ്പോൾ (മരണസമയത്ത്) ജീവനെടുക്കുക എന്നിവയെല്ലാമാണ് മലക്കുകളുടെ ജോലികളിലുൾപ്പെടുന്ന കാര്യങ്ങൾ[അവലംബം ആവശ്യമാണ്]. ഇപ്രകാരം പ്രവാചകന്മാർക്കും ദൈവദൂതന്മാർക്കും ദൈവിക സന്ദേശങ്ങൾ എത്തിച്ചു കൊടുക്കുന്ന മലക്കാണ് ‘ജിബ്‌രീൽ’ (ഗബ്രിയേൽ മാലാഖ).ഹിറാ ഗുഹയിൽ മുഹമ്മദ് നബിക്കു വഹ് യ് നൽകുവാനായി എത്തിയതും ജിബ്രീൽ മാലാഖയാണ്[അവലംബം ആവശ്യമാണ്]. </p>
+				    </div>
+				    <div class="content-4">
+						<h2>ഖുർആൻ</h2>
+                        <p>ഇസ്‌ലാം മതത്തിലെ ഏറ്റവും പ്രാമാണികമായ ഗ്രന്ഥമായ[11] ഖുർ‌ആൻ പൂർണ്ണമായും ദൈവ വചനമാണെന്ന് മുസ്‌ലിംകൾ വിശ്വസിക്കുന്നു. മുഹമ്മദിന് തന്റെ നാൽപതാം വയസ്സിൽ പ്രവാചകത്വം ലഭിക്കുകയും അന്നു മുതൽ അദ്ദേഹത്തിന്റെ മരണംവരെയുള്ള ഇരുപത്തിമൂന്ന് വർഷക്കാലയളവിൽ വിവിധ സന്ദർഭങ്ങളിലായി ജിബ്‌രീൽ(ഗബ്രിയേൽ) മാലാഖ മുഖേന അവതരിച്ചു കിട്ടിയ ദൈവിക സന്ദേശമാണ് ഖുർ‌ആൻ എന്നാണ് മുസ്‌ലിംകൾ വിശ്വസിക്കുന്നത്. മുഹമ്മദ് ജീവിച്ചിരിക്കെത്തന്നെ അദ്ദേഹത്തിന്റെ അനുയായികൾ ഖുർ‌ആൻ വചനങ്ങൾ എഴുതി വെക്കുകയും മനഃപ്പാഠമാക്കുകയും ചെയ്തിരുന്നു. കൽപ്പലകകൾ, തോൽ തുടങ്ങിയവയിൽ എഴുതി വെച്ചിരുന്ന ഖുർ‌ആന്റെ പുസ്തകരൂപത്തിലുള്ള ക്രോഡീകരണം നടന്നത് ഖലീഫ അബൂബക്റിന്റെ കാലത്താണ്.[12]
+
+ഖുർ‌ആനിൽ 114 അദ്ധ്യായങ്ങൾ (സൂറത്) ആണുള്ളത്. ആകെ വചനങ്ങൾ (ആയത്ത്) 6236 ആണ്. ഖുർആനിലെ എല്ലാ അദ്ധ്യായങ്ങളും വിഷയമനുസരിച്ചല്ല നാമകരണം ചെയ്തിട്ടുള്ളത് എങ്കിലും ചില അദ്ധ്യായങ്ങൾ അതിന്റെ പ്രധാന വിഷയമനുസരിച്ച് നാമകരണം ചെയ്യപ്പെട്ടിട്ടുണ്ട്. ഖുർ‌ആനിക വചനങ്ങൾ “മക്കാ ജീവിതകാലത്ത് അവതരിച്ചത്“(മക്കി), “മദീനാ ജീവിതകാലത്ത് അവതരിച്ചത്”(മദനി) എന്നിങ്ങനെ തരം തിരിച്ചിരിക്കുന്നു. മക്കയിൽ അവതരിക്കപ്പെട്ടവ മുസ്‌ലിം സമൂഹത്തിന് നൈതികവും ആത്മീയവുമായ ഉപദേശങ്ങളടങ്ങിയതും മദീനയിൽ അവതരിക്കപ്പെട്ടവ ധാർമ്മികവും സാമൂഹികവുമായ ഉപദേശങ്ങൾ ഉള്ളവയുമാണെന്ന്‌ നിരീക്ഷിക്കപ്പെടുന്നു.[13] ഖുർ‌ആന്റെ വ്യാഖ്യാന ശാസ്ത്രം തഫ്‌സീർ എന്നറിയപ്പെടുന്നു.[14]
+
+ഖുർ‌ആൻ എന്ന അറബി ഭാഷാപദത്തിന്റെ അർത്ഥം ‘പാരായണം ചെയ്യപ്പെടേണ്ടത്‘ എന്നാണ്.[15] ‘ഖുർ‌ആൻ‘ എന്ന പദം അറബി ഭാഷയിൽ ആദ്യം ഉപയോഗിക്കപ്പെടുന്നത്‌ ഖുർ‌ആനിൽത്തന്നെയാണ്.[16]</p>
+						<h3>പൂർവ വേദങ്ങൾ</h3>
+						<p>ഖുർആന് മുമ്പ് ദൈവത്തിൽ നിന്ന് മുൻ പ്രവാചകർക്ക് ഗ്രന്ഥങ്ങൾ അവതരിച്ചതായി മുസ്‌ലിംകൾ വിശ്വസിക്കുന്നു. അവയിൽ ചില ഗ്രന്ഥങ്ങളുടെ നാമങ്ങൾ ഖുർആനിൽ പരാമർശിക്കപ്പെട്ടിട്ടുണ്ട്. അവ താഴെ.</p>
+
+<p> ഇഞ്ചീൽ (ഈസ നബിക്ക് അവതരിച്ചത്.)</p>
+<p> തൗറാത്ത് (മൂസ നബിക്ക് അവതരിച്ചത്.)</p>
+<p> സബൂർ (ദാവൂദ് നബിക്ക് അവതരിച്ചത്.)</p>
+<p> ഇബ്റാഹീമിന്റെ ഏടുകൾ (ഇബ്റാഹീം നബിക്ക് അവതരിച്ചത്.. </p>
+				    </div>
+		        </div>
 			</section>
-
-		<script src="js/cbpFWTabs.js"></script>
-		<script>
-			(function() {
-
-				[].slice.call( document.querySelectorAll( '.tabs' ) ).forEach( function( el ) {
-					new CBPFWTabs( el );
-				});
-
-			})();
-		</script>
-
-
-<!-- For the demo ad only -->
+        </div>
 <script src="http://tympanus.net/codrops/adpacks/demoad.js"></script>
-
-	</body>
+    </body>
 </html>
