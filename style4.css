@@ -25,6 +25,11 @@
 .tabs input#tab-4{
 	top: 120px;
 }
+/*CHANGED TOP TO 160----*/
+.tabs input#tab-5{
+	top: 160px;
+}
+
 
 .tabs label {
 	background: #5ba4a4;
@@ -66,26 +71,26 @@
 .tabs input:hover + label {
 	background: #5ba4a4;
 }
-
+/*CHANGE   2----*/
 .tabs label:first-of-type {
-    z-index: 4;
-}
-
-.tab-label-2 {
-    z-index: 3;
+    z-index: 5;
 }
 
 .tab-label-3 {
-    z-index: 2;
+    z-index: 4;
 }
 
 .tab-label-4 {
-    z-index: 1;
+    z-index: 3;
+}
+
+.tab-label-5 {
+    z-index: 2;
 }
 
 .tabs input:checked + label {
     background: #fff;
-	z-index: 6;
+	z-index: 7;  /* CHANGED Z-INDEX TO 7----*/
 }
 
 .clear-shadow {
@@ -98,8 +103,9 @@
     width: auto;
 	margin: -175px 0 0 120px;
 	height: 400px;
-	z-index: 5;
+	z-index: 6; /*CHANGED  Z-INDEX TO 6----*/
 	overflow: auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
     border-radius: 3px;
 }
 
@@ -127,7 +133,8 @@
 .tabs input.tab-selector-1:checked ~ .content .content-1,
 .tabs input.tab-selector-2:checked ~ .content .content-2,
 .tabs input.tab-selector-3:checked ~ .content .content-3,
-.tabs input.tab-selector-4:checked ~ .content .content-4 {
+.tabs input.tab-selector-4:checked ~ .content .content-4 ,
+.tabs input.tab-selector-5:checked ~ .content .content-5 {
     -webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	-o-transform: translateY(0px);
