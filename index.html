@@ -36,7 +36,7 @@
 
 
 			</header>
-			<section class="tabs">
+			<section class="tabs" style="float:left";>
 	            <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
 		        <label for="tab-1" class="tab-label-1">ഇസ്‌ലാം</label>
 
@@ -130,10 +130,66 @@
           <p> <b> ഈസ</b></p>
             <p><b>മുഹമ്മദ്</p></b>
 </b>
+
             </div>
 		        </div>
 			</section>
         </div>
 
+        <div style="float:right";>
+          <button onclick="playPause()">Play/Pause</button>
+          <button onclick="makeBig()">Big</button>
+          <button onclick="makeSmall()">Small</button>
+          <button onclick="makeNormal()">Normal</button>
+          <br><br>
+          <button onclick="getVolume()" type="button">What is the volume?</button>
+<button onclick="setHalfVolume()" type="button">Set volume to 0.2</button>
+<button onclick="setFullVolume()" type="button">Set volume to 1.0</button><br>
+          <video id="video1" width="420" controls="">
+            <source src="video.mp4" type="video/mp4">
+
+            Your browser does not support HTML5 video.
+          </video>
+
+        </div>
+
+        <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 420;
+        }
+
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+        </script>
+        <script>
+var vid = document.getElementById("video1");
+
+function getVolume() {
+    alert(vid.volume);
+}
+
+function setHalfVolume() {
+    vid.volume = 0.2;
+}
+
+function setFullVolume() {
+    vid.volume = 1.0;
+}
+</script>
+<br><br>
     </body>
 </html>

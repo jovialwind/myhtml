@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+"><head></head><body>
+
+<style>
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+input[type=password], select {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+</style>
+<div>
+  <form style="text-align: center;" method="post" action="db.php">
+
+    <br>
+    EMAIL<br>
+    <input type="text" name="email">
+    <br>
+    USERNAME<br>
+    <input type="text" name="username"><br>
+    PASSWORD<br>
+    <input type="password" name="password"><br><br>
+<input type="submit" name="submit" >
+
+  </form>
+</div>
+
+</body></html>
